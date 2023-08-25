@@ -1,0 +1,17 @@
+{
+  "name": "semantic-release-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "preinstall": "npx husky install",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.6.7",
+    "husky": "^8.0.2",
+    "semantic-release": "^21.1.1"
+  }
+}
