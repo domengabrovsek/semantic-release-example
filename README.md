@@ -47,9 +47,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## Contact
 
 For any questions or feedback, please [open an issue](https://github.com/domengabrovsek/semantic-release-example/issues) on GitHub.
-
----
-
-Feel free to modify or expand the README as needed. If you'd like to add any specific sections or details, please let me know!
-
-semantic-versioning GitHub-Actions automation release-management continuous-integration conventional-commits workflow Node.js npm git-tagging
