@@ -54,4 +54,4 @@ jobs:
           default_author: github_actions
 
       - name: Push git tag
-        run: git push origin ${{ steps.next_version.outputs.version }}
+        run: git push --tags
