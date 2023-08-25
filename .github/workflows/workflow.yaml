@@ -53,8 +53,5 @@ jobs:
           message: "chore: Bumped version in package.json"
           default_author: github_actions
 
-      - name: Create git tag
-        run: git tag v${{ steps.next_version.outputs.version }}
-
       - name: Push git tag
         run: git push origin ${{ steps.next_version.outputs.version }}
