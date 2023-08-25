@@ -38,6 +38,11 @@ jobs:
       - name: Print computed version
         run: echo "Computed version is ${{ steps.next_version.outputs.version }}"
 
+      - name: Setup git user
+        run: |
+          git config --global user.name "github_action"
+          git config --global user.email "github_action@test.com"
+
       - name: Update package.json
         run: npm version ${{ steps.next_version.outputs.version }}
 
