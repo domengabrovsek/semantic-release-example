@@ -1,4 +1,14 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
 
-npx commitlint --edit 
+npx commitlint < "$1" || (echo "Invalid commit message! Please follow the Conventional Commits format. Options include:
+- fix: for patches
+- feat: for features
+- chore: for chores
+- docs: for documentation changes
+- style: for styling changes
+- refactor: for code refactoring
+- perf: for performance improvements
+- test: for test-related changes
+
+To indicate a breaking change, add 'BREAKING CHANGE:' in the footer or use 'type/scope: description!' in the header."; false)
