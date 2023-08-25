@@ -42,7 +42,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release): Used to create and publish GitHub releases.
+- Special thanks to [LukaPrebil](https://github.com/LukaPrebil) for inspiration and help in shaping this project.
 
 ## Contact
 
