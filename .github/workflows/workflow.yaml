@@ -33,7 +33,7 @@ jobs:
 
       - name: Determine next version
         id: next_version
-        run: echo "::set-output name=version::$(node .github/scripts/compute-version.js)"
+        run: echo "::set-output name=version::$(node .github/workflows/scripts/compute-version.js)"
 
       - name: Update package.json
         run: npm version ${{ steps.next_version.outputs.version }}
