@@ -1,0 +1,1 @@
+console.log('lib-2.js')
