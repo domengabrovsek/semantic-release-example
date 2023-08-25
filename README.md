@@ -10,7 +10,7 @@ This repository demonstrates an automated process for semantic versioning and re
 
 ## Workflow
 
-Here's an overview of the main workflow file [`create-new-tag-and-release.yml`](.github/workflows/create-new-tag-and-release.yml):
+Here's an overview of the main workflow file [`create-new-tag-and-release.yml`](.github/workflows/create-release.yml):
 
 1. **Checkout Code**: Checks out the code from the repository.
 2. **Setup Node.js**: Sets up the specified Node.js environment.
@@ -51,3 +51,5 @@ For any questions or feedback, please [open an issue](https://github.com/domenga
 ---
 
 Feel free to modify or expand the README as needed. If you'd like to add any specific sections or details, please let me know!
+
+semantic-versioning GitHub-Actions automation release-management continuous-integration conventional-commits workflow Node.js npm git-tagging
