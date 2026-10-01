@@ -20,12 +20,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0 # Fetch all history to compute release notes
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v7
         with:
           node-version: "18"
 
@@ -48,7 +48,7 @@ jobs:
         run: npm version ${{ steps.next_version.outputs.version }} -m "Bump version to ${{ steps.next_version.outputs.version }}"
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v11
         with:
           add: package.json
           message: "chore: Bumped version in package.json"
@@ -60,7 +60,7 @@ jobs:
           git push origin
 
       - name: Create release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           generate_release_notes: true
           prerelease: false
